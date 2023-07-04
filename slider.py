@@ -1,3 +1,14 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+st.write(
+    '''
+    # Detail Collection
+    Please input your details
+    '''
+)
+
 st.text_input('Your Name', key = 'name')
 age = st.slider('Your Age', min_value = 18, max_value=30)
 work_experience = st.slider('Work Experience', min_value = 2, max_value = 15)
