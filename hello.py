@@ -24,3 +24,8 @@ dataframe2 = pd.DataFrame(
 
 st.dataframe(dataframe2.style.highlight_min(axis = 0))
 
+
+dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+st.table(dataframe)
